@@ -8,5 +8,6 @@ urlpatterns = [
     path('usuarios/', include('usuarios.urls')),
     path('eventos/', include('eventos.urls')),
     path('', include('usuarios.urls')),
+    path('cliente/', include('cliente.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
